@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		97F2E1C02F454D0000604939 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F2E1BF2F454D0000604939 /* CheckoutView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		97CAFF672F3C271E00935157 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		97CAFF592F3C271D00935157 /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97CAFF662F3C271E00935157 /* CupcakeCornerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CupcakeCornerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97CAFF702F3C271E00935157 /* CupcakeCornerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CupcakeCornerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97F2E1BF2F454D0000604939 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		97CAFF502F3C271D00935157 = {
 			isa = PBXGroup;
 			children = (
+				97F2E1BF2F454D0000604939 /* CheckoutView.swift */,
 				97CAFF5B2F3C271D00935157 /* CupcakeCorner */,
 				97CAFF692F3C271E00935157 /* CupcakeCornerTests */,
 				97CAFF732F3C271E00935157 /* CupcakeCornerUITests */,
@@ -236,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97F2E1C02F454D0000604939 /* CheckoutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

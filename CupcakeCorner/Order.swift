@@ -9,6 +9,7 @@ import Foundation
 
 @Observable
 class Order: Codable {
+    
     enum CodingKeys: String, CodingKey {
         case _type = "type"
         case _quantity = "quantity"
@@ -43,7 +44,7 @@ class Order: Codable {
     var zip = ""
     
     var hasValidAddress: Bool {
-        if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty {
+        if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty || isJustWhiteSpace(string: name) || isJustWhiteSpace(string: streetAddress) || isJustWhiteSpace(string: city) || isJustWhiteSpace(string: zip){
             return false
         }
         
@@ -68,5 +69,12 @@ class Order: Codable {
         }
         
         return cost
+    }
+    
+    private func isJustWhiteSpace(string: String) -> Bool {
+        if string.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            return true
+        }
+        return false
     }
 }
